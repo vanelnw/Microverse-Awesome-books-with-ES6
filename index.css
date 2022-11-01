@@ -1,4 +1,4 @@
-* VARIABLES */
+/* VARIABLES  */
 :root {
   --bg-color: #fff;
   --link-color: #000;
@@ -11,7 +11,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
 }
 
 html {
@@ -24,15 +24,13 @@ a {
   color: #000;
 }
 
-
 .app-container {
   width: 100vw;
   height: 100vh;
-  padding:10px 20px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
 }
 
 /* navbar */
@@ -59,11 +57,6 @@ a {
 .nav-item.active {
   background-color: aqua;
   padding: 5px 10px;
-  
-}
-
-.nav-item.active > a{
-  color: blue;
 }
 
 .nav-item > a {
@@ -71,53 +64,56 @@ a {
   color: black;
 }
 
+.nav-item.active > a {
+  color: blue;
+}
+
 .nav-item:hover > a {
   color: blue;
 }
 
-
 /* content */
 
-.app-content{
-    width: 75%;
-    height: 60vh;
-    border: 2px solid black;
-    padding: 5px;
-    margin: 30px auto;
-    text-align: center;
+.app-content {
+  width: 75%;
+  height: 60vh;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 30px auto;
+  text-align: center;
 }
 
-.books-content{
-    border: 2px solid black;
-    margin-top: 10px;
+.books-content {
+  border: 2px solid black;
+  margin-top: 10px;
 }
 
-.single-book{
-    display: flex;
-    justify-content: space-between;
-    padding:5px 10px;
-
-}
-.single-book:nth-child(2n+1){
-    background-color: #ccc;
+.single-book {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
 }
 
-#form{
-    width: 50%;
-    margin: 10px auto;
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 20px
+.single-book:nth-child(2n + 1) {
+  background-color: #ccc;
 }
 
-input{
-    width: 100%;
+#form {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-#add-button{
-    width: fit-content;
-    align-self: flex-end;
+input {
+  width: 100%;
+}
+
+#add-button {
+  width: fit-content;
+  align-self: flex-end;
 }
 
 #contact-div {
