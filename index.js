@@ -42,8 +42,6 @@ document.addEventListener('click', (e) => {
 });
 
 setInterval(() => {
-  const dateTime = DateTime.now().toLocaleString(
-    DateTime.DATETIME_FULL_WITH_SECONDS,
-  );
+  const dateTime = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
   document.querySelector('#date_time').textContent = `${dateTime}`;
 }, 1000);
